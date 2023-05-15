@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: hsl(210, 36%, 96%);
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.heading{
+    letter-spacing: 3px;
+    color: hsl(205, 86%, 17%);
+    font-size: 1.7rem;
+}
+
+.main-content{
+    margin-top: 2rem;
+}
+
+label{
+    font-size: 1.4rem;
+    color: hsl(205, 86%, 17%);
+    letter-spacing: 4px;
+}
+
+#input-number{
+    width: 4rem;
+    font-size: 1.3rem;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.generate-btn{
+    padding: 8px 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: hsl(205, 86%, 17%);
+    background-color: #49a6e9;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.generate-btn:hover{
+    background-color: hsl(212, 33%, 89%);
+    color: #49a6e9;;
+}
+
+.form{
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.paragraphs{
+    margin-top: 4rem;
+}
+
+.para-content{
+    width: 50%;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: hsl(210, 22%, 49%);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
