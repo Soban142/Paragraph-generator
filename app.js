@@ -31,9 +31,7 @@ generateBtn.addEventListener('click', function (e) {
         let paraContent = document.createElement('p')
         articleContent.appendChild(paraContent)
         paraContent.classList.add('para-content')
-        paraContent.innerHTML = `${paragraphs[randomNumber]}`
-        }
-        
+        paraContent.innerHTML = `${paragraphs[i]}`
+        }      
 }
-}
-)
+})
