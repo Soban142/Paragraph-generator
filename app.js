@@ -21,17 +21,22 @@ generateBtn.addEventListener('click', function (e) {
     var value = +inputNumber.value;
     var randomNumber = Math.round(Math.random() * (paragraphs.length - 1));
 
-    console.log(randomNumber)
-
     if(value === '' || value > 9 || value <= 0 || value === 1){
         articleContent.innerHTML = `<p class="para-content">${paragraphs[randomNumber]}</p>`
     }
     else{
-        for(i = 0; i < value; i++){
-        let paraContent = document.createElement('p')
-        articleContent.appendChild(paraContent)
-        paraContent.classList.add('para-content')
-        paraContent.innerHTML = `${paragraphs[i]}`
-        }      
+        // for(i = 0; i < value; i++){
+        // let paraContent = document.createElement('p')
+        // articleContent.appendChild(paraContent)
+        // paraContent.classList.add('para-content')
+        // paraContent.innerHTML = `${paragraphs[i]}`
+        // }     
+        var textValue = paragraphs.slice(0, value)
+        
+        articleContent.innerHTML = textValue.map((text) => {
+            return `<p class="para-content">${text}</p>`
+
+        }).join("");
+        console.log(paragraphs.slice(0, value))
 }
 })
