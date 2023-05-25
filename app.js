@@ -37,6 +37,6 @@ generateBtn.addEventListener('click', function (e) {
             return `<p class="para-content">${text}</p>`
 
         }).join("");
-        console.log(paragraphs.slice(0, value))
+        // console.log(paragraphs.slice(0, value))
 }
 })
